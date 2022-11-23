@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto&display=swap');
 
+* {
+    font-family: 'Roboto';
+}
+
 .body {
-font-family: 'Roboto';
 background-color: #f2f4fc;
 }
 
@@ -9,36 +12,6 @@ background-color: #f2f4fc;
     max-width: 1100px;
     margin-right: auto;
     margin-left: auto;
-}
-
-nav {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-}
-
-#navbar {
-   display: flex;
-   flex-direction: row;
-   align-items: center;
-   justify-content: space-between;
-   width: 76%;
-   margin-top: 70px;
-}
-
-#main-menu {
-    display: flex;
-    justify-content: space-between;
-    width: 300px;
-}
-
-#contact {
-    background-color: #072ac8;
-    width: 143.4px;
-    height: 50px;
-    color: white;
-    text-align: center;
 }
 
 .hero-content {
@@ -159,7 +132,7 @@ nav {
     margin-top: 70px;
 }
     
-#projects {
+#project-section {
     display: flex;
     justify-content: center;
     margin-top: 200px;
@@ -348,76 +321,3 @@ nav {
     max-width: 340px;
 }
 
-#cta {
-    width: 1320px;
-    height: 500px;
-    max-width: 1320px;
-    margin-top: 200px;
-    margin-right: auto;
-    margin-left: auto;
-    background-color: #ffc600;
-}
-
-#container-cta {
-    display: flex;
-    height: 100%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.cta-heading {
-    margin-bottom: 20px;
-    color: #292e47;
-    font-size: 40px;
-}
-
-.cta-subtitle {
-    font-size: 17px;
-}
-
-#section-footer {
-    margin-top: 200px;
-    padding-bottom: 100px;
-}
-.footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: stretch;
-}
-
-.footer-content {
-    display: flex;
-    width: 260px;
-    max-width: 260px;
-    flex-direction: column;
-}
-
-.footer-content-logo {
-    width: 100px;
-    height: 30px;
-    margin-bottom: 30px;
-    background-image: url(/project-assets/logos/circle.svg);
-    background-position: 50% 50%;
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.footer-content-address {
-    font-size: 17px;
-    line-height: 150%;
-}
-
-.footer-links {
-    display: grid;
-    grid-auto-columns: 1fr;
-    grid-column-gap: 16px;
-    grid-row-gap: 16px;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto;
-}
-
-.footer-link {
-    font-size: 17px;
-    text-decoration: none;
-}

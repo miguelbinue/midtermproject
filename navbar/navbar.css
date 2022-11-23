@@ -1,0 +1,29 @@
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#navbar {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-between;
+   width: 76%;
+   margin-top: 70px;
+}
+
+#main-menu {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+}
+
+#contact {
+    background-color: #072ac8;
+    width: 143.4px;
+    height: 50px;
+    color: white;
+    text-align: center;
+}

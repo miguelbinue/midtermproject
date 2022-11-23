@@ -6,23 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="navbar/navbar.css">
+    <link rel="stylesheet" href="footer/footer.css">
+    <link rel="stylesheet" href="cta/cta.css">
+    <link rel="stylesheet" href="project-section/project-section.css">
 </head>
 <body class="body">
-    <nav>
-        <section id="navbar">
-            <div>
-                <img src="/project-assets/logos/circle.svg" alt="Circle Logo">
-            </div>
-            <div id="main-menu">
-                <a href="">Home</a>
-                <a href="">Projects</a>
-                <a href="">Services</a>
-            </div>
-            <div id="contact">
-                <p>Contact Us</p>
-            </div>
-        </section>
-    </nav>
+    <nav id="navbar"></nav>
     <section id="section-hero">
         <section id="hero-container">
             <div class="hero-content">
@@ -51,37 +41,7 @@
             <img class="client-logo" src="/project-assets/logos/amazon-logo.svg" alt="amazon-logo">
         </div>
     </section>
-    <section id="projects">
-        <div class="container">
-            <h2>Recent Projects</h2>
-            <div class="box-container">
-                <div class="box-block-projects">
-                    <img src="/project-assets/projects-section/1.jpg" alt class="project-image">
-                    <div class="box-content">
-                        <h3>Simplify</h3>
-                        <p>UI Design & App Development</p>
-                        <a href="#">Learn More</a>
-                    </div>
-                </div>
-                <div class="box-block-projects">
-                    <img src="/project-assets/projects-section/2.jpg" alt class="project-image">
-                    <div class="box-content">
-                        <h3>Dashcoin</h3>
-                        <p>Web Development</p>
-                        <a href="#">Learn More</a>
-                    </div>
-                </div>
-                <div class="box-block-projects">
-                    <img src="/project-assets/projects-section/3.jpg" alt class="project-image">
-                    <div class="box-content">
-                        <h3>Vectorify</h3>
-                        <p>User Experience Design</p>
-                        <a href="#">Learn More</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <section id="project-section"></section>
     <section id="testimonial-background">
         <div id="testimonial-content">       
             <h1 class="testimonial-heading">Hear What Our Clients Have to Say</h1>
@@ -130,32 +90,28 @@
             </div>
         </div>
     </section>
-    <section id="cta">
-        <div id="container-cta">
-            <h1 class="cta-heading">Do you have any questions?</h1>
-            <p class="cta-subtitle">Let us help you!</p>
-            <div class="form-block">
-                <form action="">
-                    <!-- FALTA PARA ACABAR -->
-                </form>
-            </div>
-        </div>
-    </section>
-    <footer id="section-footer">
-        <div class="container footer">
-            <div class="footer-content">
-                <div class="footer-content-logo"></div>
-                <div class="footer-content-address">2972 Westheimer Rd. Santa Ana, Illinois 85486</div>
-            </div>
-            <div class="footer-links">
-                <a href="#" class="footer-link">Team</a>
-                <a href="#" class="footer-link">Services</a>
-                <a href="#" class="footer-link">About Us</a>
-                <a href="#" class="footer-link">Press</a>
-                <a href="#" class="footer-link">Projects</a>
-                <a href="#" class="footer-link">Privacy Policy</a>
-            </div>
-        </div>
-    </footer>
+    <section id="cta"></section>
+    <footer id="footer"></footer>
 </body>
 </html>
+<script src="//code.jquery.com/jquery.min.js"></script>
+<script>
+    $.get("./navbar/navbar.html", function(data){
+        $("#navbar").replaceWith(data);
+    });
+</script>
+<script>
+    $.get("./footer/footer.html", function(data){
+        $("#footer").replaceWith(data);
+    });
+</script>
+<script>
+    $.get("./cta/cta.html", function(data){
+        $("#cta").replaceWith(data);
+    });
+</script>
+<script>
+    $.get("./project-section/project-section.html", function(data){
+        $("#project-section").replaceWith(data);
+    });
+</script>

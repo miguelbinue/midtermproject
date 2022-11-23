@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- links CSS -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/navbar/navbar.css">
+    <link rel="stylesheet" href="/footer/footer.css">
+    <link rel="stylesheet" href="/cta/cta.css">
+    <link rel="stylesheet" href="project.css">
+    <link rel="stylesheet" href="/project-section/project-section.css">
+
+</head>
+<body>
+    <nav id="navbar"></nav>
+    <section id="project-intro">
+        <div class="container">
+            <div class="project-intro-wrapper">
+                <h1 class="project-intro-title">Simplify</h1>
+                <div class="project-subtitle-wrapper">
+                    <p class="subtitle-description">UI Design & App Development</p>
+                    <div class="subtitle-date">
+                        <p class="subtitle-date-str">Completed on</p>
+                        <p class="subtitle-date-num">22/2/22</p>
+                    </div>
+                </div>
+            </div>
+            <div class="intro-image">
+                <img src="/project-assets/projects-section/1.jpg" alt class="project-intro-image">
+                <img src="/project-assets/projects-section/1.jpg" alt class="project-intro-image-effect">
+            </div>
+            <div class="project-details">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque numquam sunt nulla, perferendis ad aliquam praesentium aliquid debitis odio fugit tempore, culpa vitae omnis. Qui sequi quae assumenda? Dolor, quasi!Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque numquam sunt nulla, perferendis ad aliquam praesentium aliquid debitis odio fugit tempore, culpa vitae omnis. Qui sequi quae assumenda? Dolor, quasi!</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni est vero, ipsum ullam perferendis illum consequatur nobis rem, amet, modi facilis reiciendis ab ad quam vitae laboriosam error! Quod, debitis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque numquam sunt nulla, perferendis ad aliquam praesentium aliquid debitis odio fugit tempore, culpa vitae omnis. Qui sequi quae assumenda? Dolor, quasi!</p>
+            </div>
+        </div>
+        
+        
+    </section>
+    <section id="project-section"></section>
+    <section id="cta"></section>
+    <footer id="footer"></footer>
+</body>
+</html>
+
+<script src="//code.jquery.com/jquery.min.js"></script>
+<script>
+    $.get("/navbar/navbar.html", function(data){
+        $("#navbar").replaceWith(data);
+    });
+</script>
+<script>
+    $.get("/footer/footer.html", function(data){
+        $("#footer").replaceWith(data);
+    });
+</script>
+<script>
+    $.get("/cta/cta.html", function(data){
+        $("#cta").replaceWith(data);
+    });
+</script>
+<script>
+    $.get("/project-section/project-section.html", function(data){
+        $("#project-section").replaceWith(data);
+    });
+</script>
