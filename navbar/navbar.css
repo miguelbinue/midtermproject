@@ -27,3 +27,7 @@ nav {
     color: white;
     text-align: center;
 }
+
+#navbar img {
+    cursor: pointer;
+}
