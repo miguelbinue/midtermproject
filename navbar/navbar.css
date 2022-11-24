@@ -31,3 +31,19 @@ nav {
 #navbar img {
     cursor: pointer;
 }
+
+
+
+@media (max-width: 420px) {
+
+}
+
+/* Responsive tablet */
+@media (min-width: 420px ),(max-width: 820px) {
+
+}
+
+/* Responsive desktop */
+@media (min-width: 820px) {
+
+}

@@ -17,6 +17,8 @@ let placeholder = fetch('https://jsonplaceholder.typicode.com/posts/1/comments?_
         document.getElementById("project-titulo").innerHTML = tituloName;
         document.getElementById("subtitle-description").innerHTML = subtituloName;
         document.querySelector('.project-intro-image').src = `/project-assets/projects-section/${fotoName}.jpg`;
+        document.querySelector('.project-intro-image-effect').src = `/project-assets/projects-section/${fotoName}.jpg`;
+        document.getElementById("project-details-p").innerHTML = paragraphName;
     }
         
     // cleanResponse.forEach((post) => {
