@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+    </style>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/navbar/navbar.css" />
+    <link rel="stylesheet" href="/contact/contact.css" />
+    <link rel="stylesheet" href="/footer/footer.css">
+  </head>
+  <body>
+    <nav id="navbar"></nav>
+    <section id="section-contact">
+      <h2>Contact Us</h2>
+      <form action="">
+        <label for="fullName">Full name *</label><br />
+        <input
+          type="text"
+          id="fullName"
+          placeholder="Enter your full name"
+          required
+        /><br />
+        <div class="div-contact">
+          <div class="email-class">
+            <label for="email">Email</label><br />
+            <input
+              type="email"
+              id="email"
+              placeholder="Enter your email adress"
+            /><br />
+          </div>
+          <div class="phone-class">
+            <label for="phone">Phone</label><br />
+            <input
+              type="number"
+              id="phone"
+              placeholder="Enter your phone number"
+            /><br />
+          </div>
+        </div>
+        <div id="div-message">
+          <label for="message">Message *</label><br />
+          <input
+            type="text"
+            id="message"
+            placeholder="Write your message here..."
+            required
+          /><br />
+        </div>
+        <input type="submit" value="Submit" id="submit-bt" />
+      </form>
+    </section>
+    <footer id="section-footer"></footer>
+
+
+
+
+
+
+
+    <script src="/index.js"></script>
+    <script src="contact.js"></script>
+    <script src="/contact/contact.js"></script>
+  </body>
+</html>
+
+<script src="//code.jquery.com/jquery.min.js"></script>
+<script>
+    $.get("/navbar/navbar.html", function(data){
+        $("#navbar").replaceWith(data);
+    });
+</script>
+<script>
+    $.get("/footer/footer.html", function(data){
+        $("#section-footer").replaceWith(data);
+    });
+</script>

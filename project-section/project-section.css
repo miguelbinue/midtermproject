@@ -72,7 +72,9 @@
     text-decoration: none;
 }
 
-@media (max-width: 420px) {
+
+/* Responsive desktop */
+@media (min-width: 820px) {
 
 }
 
@@ -100,15 +102,29 @@
         margin-top: 40px;
     }
 
-    
+}
+/* Responsive mobile */
+@media (max-width: 420px) {
+    #titulo {
+        font-size: 30px;
+        text-align: center;
+    }
 
+    .box-container {
+        margin-top: 20px;
+        justify-items: stretch;
+        grid-auto-flow: row;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+    }
 
+    #project-section .container {
+        width: 355px;
+    }
 
-    
-
+    .box-content {
+        max-width: 100%;
+        width: 100%;
+    }
 }
 
-/* Responsive desktop */
-@media (min-width: 820px) {
-
-}

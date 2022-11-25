@@ -36,13 +36,15 @@ background-color: #f2f4fc;
 }
 
 .hero-img {
-    width: 560px;
-    display: block;
     position: relative;
+    display: block;
+    max-width: 539.6px;
 }
 
 .hero {
-    width: 560px;
+    max-width: 100%;
+    vertical-align: middle;
+    display: inline-block;
 }
 
 .hero-img .card1 {
@@ -51,9 +53,7 @@ background-color: #f2f4fc;
     top: 0%;
     right: auto;
     bottom: auto;
-    max-width: 294px;
-    height: 315;
-    z-index: 10;
+    max-width: 375px;
 }
 
 .hero-img .card2 {
@@ -63,8 +63,6 @@ background-color: #f2f4fc;
     right: -25%;
     bottom: -22%;
     max-width: 375px;
-    width: 290px;
-    height: 292px;
 }
 
 .text-block {
@@ -407,11 +405,115 @@ background-color: #f2f4fc;
 
 /* Responsive mobile */
 @media (max-width: 420px) {
+/* SECTION HERO */
+    .hero-content h1 {
+        font-size: 30px;
+    }
 
-    /* .hero-content h1 {
-        font-size: 40px;
-    } */
+    .text-block {
+        font-size: 17px;
+    }
+
+    .hero-buttons {
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    align-items: center;
+    }
+
+    .hero-text-button {
+        text-align: center;
+    }
+
+    .primary-button {
+        margin-right: 0px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .card1 {
+        display: none;
+    }
+
+    
+    .card2 {
+        display: none;
+
+       
+    }
+
+     /* CLIENTS SECTION */
+
+     #logo-grid {
+        margin-top: 40px;
+        
+    }
+
+    .container-logo {
+        display: flex;
+        flex-direction: column;
+        padding: 0px 30px;        
+    }
+
+    .amazon {
+        display: none;
+    }
+
+    /* TESTIMONIAL SECTION */
+    #testimonial-background {
+        height: 450px;
+        
+    }
+
+    #testimonial-content {
+        height: 100%;
+        justify-content: space-around;
+        
+    }
+
+    .testimonial-heading {
+        font-size: 30px;
+        width: 355px;
+    }
+
+    .testimonial-text {
+        width: 355px;
+    }
+
+    .profile {
+        display: none;
+    }
+
+    /* SERVICES SECTION */
+    #servicesSection .container {
+        width: 355px;
+    }
+    
+    .container h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .services {
+        margin-top: 20px;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+    }
+
+    .services .img {
+        flex: 0 0 auto;
+    }
+
+    .serviceItem p {
+        height: 58px !important;
+    }
+
+    #servicesSection {
+        padding: 0;
+    }
+
+
 }
+
 
 
 

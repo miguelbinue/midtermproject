@@ -12,6 +12,15 @@ nav {
    margin-top: 70px;
 }
 
+#navbar a {
+    text-decoration: none;
+    color: #6B708D;
+}
+
+#navbar a:hover {
+    color: #072AC8;
+}
+
 #main-menu-row {
     display: flex;
     justify-content: space-between;
@@ -24,6 +33,7 @@ nav {
     height: 50px;
     color: white;
     text-align: center;
+    cursor: pointer;
 }
 
 .navbar-container {
