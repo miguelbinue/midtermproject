@@ -2,7 +2,6 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-bottom: 240px;
 }
 
 #navbar {
@@ -61,6 +60,7 @@ nav {
 
 /* Responsive tablet */
 @media (max-width: 820px) {
+    
     #navbar {
         margin-top: 0px;
         height: 60px;
@@ -105,10 +105,9 @@ nav {
         display: flex !important; 
     }
 
-    .hide-menu {
-        display: none !important;
+    .padding-nav {
+        padding-bottom: 240px;
     }
-
 }
 
 /* Responsive desktop */
