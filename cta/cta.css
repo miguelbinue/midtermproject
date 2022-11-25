@@ -89,8 +89,14 @@
 }
 
 /* Responsive tablet */
-@media (min-width: 420px ),(max-width: 820px) {
+@media (max-width: 820px) {
+    #container-cta {
+        width: 760px !important;
+    }
 
+    #cta {
+        width: 820px !important;
+    }
 }
 
 /* Responsive desktop */

@@ -1,15 +1,28 @@
+
 <nav>
-    <section id="navbar">
-        <div>
-            <img src="/project-assets/logos/circle.svg" alt="Circle Logo" onclick="location.href='/index.html'">
-        </div>
-        <div id="main-menu">
-            <a href="/index.html">Home</a>
-            <a href="">Projects</a>
-            <a href="">Services</a>
-        </div>
-        <div id="contact">
-            <p>Contact Us</p>
+    <section id="navbar" >
+        <div class="navbar-container">
+            <div>
+                <img id="image-logo" src="/project-assets/logos/circle.svg" alt="Circle Logo">
+            </div>
+            <div id="main-menu-column">
+                <a href="">Home</a>
+                <a href="">Projects</a>
+                <a href="">Services</a>
+            </div>
+            <div id="main-menu-row">
+                <a href="">Home</a>
+                <a href="">Projects</a>
+                <a href="">Services</a>
+            </div>
+            <div class="burger nav-button" onclick="repliegue()">
+                <img src="/project-assets/logos/burger.png" class="icon-nav-menu"></img>
+            </div>
+            <div id="contact">
+                <p>Contact Us</p>
+            </div>
         </div>
     </section>
 </nav>
+
+<script src="/navbar/navbar.js"></script>
